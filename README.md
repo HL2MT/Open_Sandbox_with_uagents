@@ -1,6 +1,10 @@
 # Open_Sandbox_with_uagents
 
-This repo is a trial part of analyser of opensandbox phase 1 which is used to analyse any github repo with complete detail,QA,workflow,this has feature of analysation of single repo or multiple repo as per user need,user can analyse repo,multiple repo at same time with chat option for all repo at same time usefull for comparison etc.directory,files,anything based on user need
+This repo is a trial part of analyser of opensandbox phase 1 which is used to analyse any github repo with complete detail,QA,workflow,this has feature of analysation of single repo or multiple repo as per user need,user can analyse repo,multiple repo at same time with chat option for all repo at same time usefull for comparison etc.directory,files,anything based on user need.
+
+# Uagents
+Uagent is a open source framework from fetchai based on blockchain,it give the flixibilty to create and use agents better than other framework in market.
+In this repo to use generator part with analyser part , both part is used as uagents Agent by this these part will have ability to colleborate.
 
 # How to use
 Use main.py
@@ -16,3 +20,7 @@ Note: This repo is just a trial for proof of concept and it just created by usin
 
 # Youtube Video
 https://www.youtube.com/watch?v=FDONk8adclk
+
+# Future Improvements
+Currently we are redesigning the whole analyser and generator part with improvements in current code and scale up.
+

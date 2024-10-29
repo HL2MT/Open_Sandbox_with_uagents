@@ -11,10 +11,10 @@ import asyncio
 
 
 # Configure the Gemini model
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "AIzaSyA2izqifvc1o2uVkB9U_s0jtKh2DNOcMB0"
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "gemini Api Key"  # Replace with your actual API key file path  link: https://aistudio.google.com/app/prompts/new_chat?gad_source=1&gclid=Cj0KCQjwpvK4BhDUARIsADHt9sRAYLFVfLEwMG-Yz5wwJ6p3JozW8DB2hK-eqmP9uYOLJ12Qw8vNheAaAq4pEALw_wcB
 genai.configure(api_key=os.environ['GOOGLE_APPLICATION_CREDENTIALS'])
-model = genai.GenerativeModel('gemini-1.5-flash')
-model_for_workflow_analysation = genai.GenerativeModel('gemini-1.5-pro-exp-0827')
+model = genai.GenerativeModel('gemini-1.5-flash') #1M context window but 15 call/min
+model_for_workflow_analysation = genai.GenerativeModel('gemini-1.5-pro-exp-0827') #2M contet window but 2 call/min
 
 try:
     loop = asyncio.get_running_loop()
@@ -555,7 +555,7 @@ class analyzer_agent_(Agent):
             location_prompt = f"""Given this repository overview:
             {self.repo_overview}
 
-            And this query: "{query}"
+            And this query: '{query}'
 
             Identify the most relevant directories or files to answer this query.
             Explain why each component is relevant.
